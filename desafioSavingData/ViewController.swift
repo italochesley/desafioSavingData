@@ -10,8 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let keyContadorUtilizacoes = "contadorUtilizacoes"
+    let keyDesafioSavingData = "group.desafioSavingData"
+    let keyParametroNumeroVisitas = "parametroNumeroVisitas"
+    
+    @IBOutlet weak var contadorNumeroVisitasLabel: UILabel!
+    @IBOutlet weak var parametroNumeroVisitasLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        solicitarAvaliacao()
+        setarLabels()
+    }
+    
+    func setarLabels() {
+        contadorNumeroVisitasLabel.text = "Visitas: \(obterNumeroVisitas())"
+        parametroNumeroVisitasLabel.text = "Parâmetro: \(obterParametroNumeroVisitas())"
+    }
+    
+    func solicitarAvaliacao() {
         incrementarContadorUtilizacoesApp()
         if deveSolicitarAvaliacao() {
             zerarContadorUtilizacoesAPP()
@@ -20,24 +37,31 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
-
-    func deveSolicitarAvaliacao() -> Bool {
-        
+    
+    func obterNumeroVisitas() -> Double {
         let userDefaults = UserDefaults.standard
-        let contadorUtilizacoes = userDefaults.double(forKey: "contadorUtilizacoes")
-        return contadorUtilizacoes >= 2
+        return userDefaults.double(forKey: keyContadorUtilizacoes)
+    }
+    func deveSolicitarAvaliacao() -> Bool {
+        let contadorUtilizacoes:Double = obterNumeroVisitas()
+        return contadorUtilizacoes >= obterParametroNumeroVisitas()
     }
     
     func zerarContadorUtilizacoesAPP() {
         let userDefaults = UserDefaults.standard
-        userDefaults.set(0, forKey: "contadorUtilizacoes")
+        userDefaults.set(0, forKey: keyContadorUtilizacoes)
     }
     
     func incrementarContadorUtilizacoesApp() {
         let userDefaults = UserDefaults.standard
-        var contadorUtilizacoes = userDefaults.double(forKey: "contadorUtilizacoes")
+        var contadorUtilizacoes = userDefaults.double(forKey: keyContadorUtilizacoes)
         contadorUtilizacoes += 1
-        userDefaults.set(contadorUtilizacoes, forKey: "contadorUtilizacoes")
+        userDefaults.set(contadorUtilizacoes, forKey: keyContadorUtilizacoes)
+    }
+    
+    func obterParametroNumeroVisitas() -> Double {
+        let userDefaults = UserDefaults(suiteName: keyDesafioSavingData)
+        return userDefaults?.double(forKey: keyParametroNumeroVisitas) ?? 1
     }
 }
 

@@ -51,6 +51,7 @@
 		92FC5C462039A73B009D298A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FC5C522039A81A009D298A /* feriadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feriadosViewController.swift; sourceTree = "<group>"; };
 		92FC5C542039AD8B009D298A /* feriados.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = feriados.plist; sourceTree = "<group>"; };
+		92FC5C912039C829009D298A /* desafioSavingData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = desafioSavingData.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		92FC5C232039A73A009D298A /* desafioSavingData */ = {
 			isa = PBXGroup;
 			children = (
+				92FC5C912039C829009D298A /* desafioSavingData.entitlements */,
 				92FC5C242039A73A009D298A /* AppDelegate.swift */,
 				92FC5C262039A73A009D298A /* ViewController.swift */,
 				92FC5C522039A81A009D298A /* feriadosViewController.swift */,
@@ -200,6 +202,11 @@
 					92FC5C202039A73A009D298A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					92FC5C342039A73B009D298A = {
 						CreatedOnToolsVersion = 9.2;
@@ -434,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = desafioSavingData/desafioSavingData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5895XF33GD;
 				INFOPLIST_FILE = desafioSavingData/Info.plist;
@@ -449,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = desafioSavingData/desafioSavingData.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5895XF33GD;
 				INFOPLIST_FILE = desafioSavingData/Info.plist;
