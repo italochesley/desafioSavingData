@@ -10,20 +10,23 @@ import UIKit
 
 class feriadosViewController: UIViewController {
 
-    var feriados = ["30 de março - sexta feira santa",
-                    "01 de abril - páscoa",
-                    "21 de abril - tiradentes",
-                    "01 de maio - dia do trabalhador",
-                    "31 de maio - corpus christi",
-    ]
+    var feriados: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        preencherFeriadosComPList()
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func preencherFeriadosComPList () {
+        if let pList = Bundle.main.path(forResource: "feriados", ofType: "plist") {
+            let dictionary = NSDictionary(contentsOfFile: pList)
+            feriados = dictionary?.object(forKey: "Feriados") as? [String] ?? [""]
+        }
     }
     
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Feriados</key>
+	<array>
+		<string>30 de março - sexta feira santa</string>
+		<string>01 de abril - páscoa</string>
+		<string>21 de abril - tiradentes</string>
+		<string>01 de maio - dia do trabalhador</string>
+		<string>31 de maio - corpus christi</string>
+	</array>
+</dict>
+</plist>
