@@ -53,6 +53,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="5U3-zv-dge"/>
+                    <connections>
+                        <outlet property="contadorNumeroVisitasLabel" destination="uEJ-5w-jpF" id="082-7Y-UZq"/>
+                        <outlet property="parametroNumeroVisitasLabel" destination="6Cb-3u-voo" id="fE9-CC-Jt2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
