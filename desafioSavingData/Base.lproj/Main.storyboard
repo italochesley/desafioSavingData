@@ -26,10 +26,28 @@
                                     <segue destination="yzh-6p-oAA" kind="show" id="zd6-nd-HPo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visitas: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEJ-5w-jpF">
+                                <rect key="frame" x="54" y="451" width="284" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parâmetro: 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cb-3u-voo">
+                                <rect key="frame" x="54" y="498" width="284" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Cb-3u-voo" secondAttribute="trailing" constant="37" id="Btv-He-psN"/>
+                            <constraint firstItem="uEJ-5w-jpF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="Cbw-ta-ftH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Cb-3u-voo" secondAttribute="bottom" constant="148" id="HSv-gl-ZzB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uEJ-5w-jpF" secondAttribute="trailing" constant="37" id="Ltf-Wg-95C"/>
+                            <constraint firstItem="6Cb-3u-voo" firstAttribute="top" secondItem="uEJ-5w-jpF" secondAttribute="bottom" constant="26" id="S1q-2x-cfn"/>
                             <constraint firstItem="bjS-B9-NCF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ss2-1P-2zN"/>
+                            <constraint firstItem="6Cb-3u-voo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="Vf8-Lr-w9v"/>
                             <constraint firstItem="bjS-B9-NCF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aon-gh-CEl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -38,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="133"/>
+            <point key="canvasLocation" x="808.79999999999995" y="132.68365817091455"/>
         </scene>
         <!--Feriados View Controller-->
         <scene sceneID="PGq-4b-OEo">
