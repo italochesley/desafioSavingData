@@ -14,6 +14,7 @@
 		92FC5C2F2039A73A009D298A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FC5C2D2039A73A009D298A /* LaunchScreen.storyboard */; };
 		92FC5C3A2039A73B009D298A /* desafioSavingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC5C392039A73B009D298A /* desafioSavingDataTests.swift */; };
 		92FC5C452039A73B009D298A /* desafioSavingDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC5C442039A73B009D298A /* desafioSavingDataUITests.swift */; };
+		92FC5C532039A81A009D298A /* feriadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FC5C522039A81A009D298A /* feriadosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		92FC5C402039A73B009D298A /* desafioSavingDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafioSavingDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FC5C442039A73B009D298A /* desafioSavingDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafioSavingDataUITests.swift; sourceTree = "<group>"; };
 		92FC5C462039A73B009D298A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FC5C522039A81A009D298A /* feriadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feriadosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				92FC5C2B2039A73A009D298A /* Assets.xcassets */,
 				92FC5C2D2039A73A009D298A /* LaunchScreen.storyboard */,
 				92FC5C302039A73A009D298A /* Info.plist */,
+				92FC5C522039A81A009D298A /* feriadosViewController.swift */,
 			);
 			path = desafioSavingData;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				92FC5C272039A73A009D298A /* ViewController.swift in Sources */,
 				92FC5C252039A73A009D298A /* AppDelegate.swift in Sources */,
+				92FC5C532039A81A009D298A /* feriadosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
